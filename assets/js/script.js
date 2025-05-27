@@ -4,8 +4,8 @@ $(document).ready(function () {
 	// product varient js start--
 	$(".label-accordion-btn").click(function (event) {
 		event.stopPropagation();
-		$(".label-content-bottom").slideUp();
 		$(this).next().slideDown();
+		$(this).parent().parent().siblings().find(".label-content-bottom").slideUp();
 	});
 	// product varient js end--
 })
