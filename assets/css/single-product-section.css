@@ -78,8 +78,6 @@
 
 .swiper.single-product-slider-thumb {
     margin: 20px 0 0 0;
-    background-color: var(--item-bg);
-    padding: 10px;
     border-radius: 10px;
 }
 
@@ -91,7 +89,7 @@
     -o-border-radius: 6px;
     cursor: pointer;
     overflow: hidden;
-    border: 2px solid transparent;
+    border: 2px solid var(--border-color2);
     transition: all ease .3s;
     -webkit-transition: all ease .3s;
     -moz-transition: all ease .3s;
@@ -232,17 +230,23 @@
     margin: 0 0 10px 0;
 }
 
-.single-product-description-list ul {
-    margin: 0 0 0 20px;
-}
-
 .single-product-description-list ul li {
     margin: 0 0 5px 0;
-    list-style-type: disclosure-closed;
+    position: relative;
+    padding: 0px 0 0 26px;
 }
 
-.single-product-description-list ul li::marker {
-    color: var(--brand-color);
+.single-product-description-list ul li::after {
+    position: absolute;
+    content: "";
+    top: 3px;
+    left: 0;
+    background-image: url("../images/checkmark.svg");
+    width: 16px;
+    height: 16px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .single-product-description-list ul li:last-child {
@@ -261,16 +265,41 @@
 .product-varient-wrapper-main {
     margin: 24px 0 0 0;
     padding: 15px;
-    background: var(--item-bg);
+    background: var(--icon-item-bg);
     border-radius: 10px;
+}
+
+.product-varient-wrapper-title-inner {
+    margin: 0 0 10px 0;
+    position: relative;
+    z-index: 1;
+    text-align: center;
+}
+
+.product-varient-wrapper-title-inner::after{
+    position: absolute;
+    content: "";
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    z-index: -1;
+    background-color: var(--black);
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
 }
 
 .product-varient-wrapper-title {
     color: var(--heading-text-color);
-    font-size: 22px;
+    font-size: 18px;
     font-weight: 700;
     font-family: var(--heading-font);
-    margin: 0 0 10px 0;
+    display: inline-block;
+    background-color: var(--icon-item-bg);
+    padding: 0 16px;
 }
 
 .product-varient {
@@ -298,9 +327,12 @@
 }
 
 .product-varient-label {
+    user-select: none;
+    cursor: pointer;
     display: block;
     border: 2px solid var(--border-color2);
     width: 100%;
+    background-color: var(--white);
     border-radius: 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
@@ -390,24 +422,48 @@
     line-height: 1;
 }
 
+.product-varient-title-wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.product-varient-title-inner{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px;
+}
+
+.product-varient-title{
+    display: inline-block;
+}
+
+.product-varient-title-badge,
 .product-varient-title-text {
     color: var(--paragraph-text-color);
     font-size: 14px;
     font-weight: 400;
     font-family: var(--paragraph-font);
     line-height: 1;
-    margin: 5px 0 0 0;
+    display: inline-block;
+}
+
+.product-varient-title-badge {
+    padding: 7px;
+    background-color: var(--border-color2);
+    border-radius: 5px;
 }
 
 .product-varient-label .product-price-wrap {
     display: flex;
     align-items: center;
-    gap: 16px;
+    gap: 20px;
 }
 
 .product-varient-badge {
     padding: 8px;
-    background-color: var(--brand-color);
+    background-color: var(--icon-item-bg);
     border-radius: 5px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
@@ -416,29 +472,37 @@
 }
 
 .product-varient-badge p {
-    color: var(--white);
-    font-size: 16px;
+    color: var(--paragraph-text-color);
+    font-size: 14px;
     font-weight: 700;
     font-family: var(--paragraph-font);
     line-height: 1;
 }
 
-.product-varient-label .previous-price,
+.product-price-wrap-inner {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    gap: 8px;
+    text-align: right;
+}
+
 .product-varient-label .latest-price {
     font-size: 16px;
     font-family: var(--paragraph-font);
     line-height: 1;
+    color: var(--black);
+    font-weight: 700;
 }
 
 .product-varient-label .previous-price {
     color: var(--text-muted);
     font-weight: 400;
     text-decoration: line-through;
-}
-
-.product-varient-label .latest-price {
-    color: var(--black);
-    font-weight: 700;
+    opacity: 0.8;
+    font-size: 14px;
+    font-family: var(--paragraph-font);
+    line-height: 1;
 }
 
 .label-content-bottom {
@@ -480,20 +544,26 @@
 .label-content-list {
     display: flex;
     flex-wrap: wrap;
-    column-gap: 10px;
+    column-gap: 16px;
     row-gap: 5px;
 }
 
 .label-content-list li {
-    margin: 0 0 0 20px;
+    padding: 0 0 0 18px;
+    position: relative;
 }
 
-.label-content-list li {
-    list-style-type: disclosure-closed;
-}
-
-.label-content-list li::marker {
-    color: var(--brand-color);
+.label-content-list li::after {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 5px;
+    width: 12px;
+    height: 12px;
+    background-image: url("../images/checkmark.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .label-content-list li p {
@@ -546,7 +616,7 @@
     margin: 24px 0 0 0;
     width: 100%;
     background-color: var(--btn-bg);
-    color: var(--black);
+    color: var(--btn-color);
     font-size: 14px;
     font-family: var(--paragraph-font);
     text-transform: uppercase;
@@ -556,11 +626,11 @@
     line-height: 1;
     text-align: center;
     border: 2px solid transparent;
-    border-radius: 5px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
-    -o-border-radius: 5px;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
     transition: all linear .3s;
     -webkit-transition: all linear .3s;
     -moz-transition: all linear .3s;
@@ -571,6 +641,7 @@
 .label-btn:hover {
     background-color: transparent;
     border-color: var(--btn-bg);
+    color: var(--btn-bg);
 }
 
 /* product bundle varient css end */

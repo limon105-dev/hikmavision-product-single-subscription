@@ -51,12 +51,12 @@
     --paragraph-text-color: #000000;
     --item-bg: #f7f6f9;
     --icon-item-bg: #f2fcff;
-    --text-muted: ##898787;
+    --text-muted: #898787;
     --brand-color: #10bbef;
     --border-color: #10bbef;
-    --border-color2: #dddddd;
-    --btn-color: #000;
-    --btn-bg: #ffc400;
+    --border-color2: #e3e3e3;
+    --btn-color: #fff;
+    --btn-bg: #000;
 
     /* font family */
     --heading-font: "Nunito", serif;
