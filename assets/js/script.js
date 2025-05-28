@@ -8,6 +8,14 @@ $(document).ready(function () {
 		$(this).parent().parent().siblings().find(".label-content-bottom").slideUp();
 	});
 	// product varient js end--
+
+	// **..product-accordion js start..**
+	$('.product-accordion-toggle-btn').on('click', function () {
+		$(this).next().slideToggle();
+		$(this).parent().toggleClass('active');
+		$(this).parent().siblings().removeClass('active').find('.product-accordion-item-content').slideUp();
+	});
+	// **..product-accordion js end..**
 })
 
 // product-slider js start---
@@ -20,7 +28,7 @@ var swiper = new Swiper(".single-product-slider-thumb", {
 		// when window width is >= 320px
 		1: {
 			spaceBetween: 10,
-			slidesPerView: 4,
+			slidesPerView: 5,
 		},
 		// when window width is >= 576px
 		576: {
@@ -29,6 +37,11 @@ var swiper = new Swiper(".single-product-slider-thumb", {
 		},
 		// when window width is >= 768px
 		768: {
+			spaceBetween: 16,
+			slidesPerView: 5,
+		},
+		// when window width is >= 768px
+		1151: {
 			spaceBetween: 16,
 			slidesPerView: 7,
 		},
