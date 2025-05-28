@@ -1057,5 +1057,20 @@
         padding: 0 15px 12px 0;
     }
 
+    .product-varient-label-quantity-wrap {
+        margin: 10px 0 0 0;
+    }
+
+    .label-quantity-wrap {
+        border-radius: 3px;
+    }
+
+    .label-quantity-wrap .quantity-increase,
+    .label-quantity-wrap .quantity-decrease,
+    .label-quantity-wrap .quantity-field {
+        width: 35px;
+        height: 35px;
+    }
+
     /* single-product section css end */
 }
