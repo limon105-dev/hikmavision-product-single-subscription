@@ -1,0 +1,184 @@
+/* img-text section css start */
+.img-text-section {
+    margin: 80px 0;
+    position: relative;
+}
+
+.img-text-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+}
+
+.img-text-img {
+    padding: 50px 20px 50px 0;
+}
+
+.img-text-img::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background-color: var(--icon-item-bg);
+    z-index: -1;
+    border-radius: 0 10px 10px 0;
+}
+
+.img-text-content {
+    padding: 0 0 0 80px;
+}
+
+.img-text-content-title {
+    color: var(--heading-text-color);
+    font-size: 32px;
+    font-weight: 700;
+    font-family: var(--heading-font);
+    margin: 0 0 24px 0;
+}
+
+.img-text-content-list li {
+    padding: 0 0 0 24px;
+    position: relative;
+    margin: 0 0 10px 0;
+}
+
+.img-text-content-list li:last-child {
+    margin: 0;
+}
+
+.img-text-content-list li::after {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 5px;
+    width: 14px;
+    height: 14px;
+    background-image: url("../images/checkmark.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.img-text-content-list li p {
+    color: var(--paragraph-text-color);
+    font-size: 16px;
+    font-family: var(--paragraph-font);
+    line-height: 22px;
+}
+
+.img-text-content .custom-btn {
+    margin: 24px 0 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    width: fit-content;
+}
+
+.img-text-content .custom-btn svg {
+    width: 20px;
+    height: 20px;
+    transition: all ease .3s;
+    -webkit-transition: all ease .3s;
+    -moz-transition: all ease .3s;
+    -ms-transition: all ease .3s;
+    -o-transition: all ease .3s;
+}
+
+.img-text-content .custom-btn:hover svg {
+    margin-left: 5px;
+}
+
+.img-text-content .single-product-review {
+    margin: 16px 0 0 0;
+}
+
+/* img-text section css end */
+
+@media only screen and (max-width:992px) {
+
+    /* img-text section css start */
+    .img-text-content {
+        padding: 0 0 0 30px;
+    }
+
+    /* img-text section css end */
+}
+
+@media only screen and (max-width: 767px) {
+
+    /* img-text section css start */
+    .img-text-section {
+        position: unset;
+    }
+
+    .img-text-wrapper {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .img-text-img {
+        text-align: center;
+        position: relative;
+        padding: 50px 0 50px 0;
+    }
+
+    .img-text-img img {
+        margin: 0 auto;
+        max-width: 300px;
+    }
+
+    .img-text-img::after {
+        border-radius: 10px;
+        width: 100%;
+    }
+
+    .img-text-content {
+        padding: 20px 0 0 0;
+    }
+
+    /* img-text section css end */
+}
+
+@media only screen and (max-width: 767px) {
+
+    /* img-text section css start */
+    .img-text-section {
+        margin: 40px 0;
+    }
+
+    .img-text-img::after {
+        border-radius: 6px;
+    }
+
+    .img-text-content-title {
+        font-size: 24px;
+        margin: 0 0 16px 0;
+    }
+
+    .img-text-content-list li p {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .img-text-content-list li::after {
+        width: 12px;
+        height: 12px;
+    }
+
+    .img-text-content-list li {
+        padding: 0 0 0 18px;
+        margin: 0 0 6px 0;
+    }
+
+    .img-text-content .custom-btn {
+        margin: 16px 0 0 0;
+    }
+
+    .img-text-content .single-product-review {
+        margin: 10px 0 0 0;
+    }
+
+    /* img-text section css end */
+}

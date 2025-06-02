@@ -105,7 +105,7 @@
     width: 100%;
 }
 
-.icon-items {
+.product-single-icon-items {
     display: flex;
     flex-direction: column;
     gap: 24px;
@@ -113,7 +113,7 @@
     height: 100%;
 }
 
-.icon-item {
+.product-single-icon-item {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -129,11 +129,11 @@
     -o-border-radius: 6px;
 }
 
-.icon-item .icon {
+.product-single-icon-item .icon {
     display: flex;
 }
 
-.icon-item .icon svg {
+.product-single-icon-item .icon svg {
     width: 48px;
     height: 48px;
     animation: none;
@@ -141,11 +141,11 @@
     -webkit-animation: none;
 }
 
-.icon-item .icon svg path {
+.product-single-icon-item .icon svg path {
     fill: var(--brand-color);
 }
 
-.icon-item:hover .icon svg {
+.product-single-icon-item:hover .icon svg {
     animation: bounce .6s ease-in-out infinite;
     -webkit-animation: bounce .6s ease-in-out infinite;
 }
@@ -170,7 +170,7 @@
     }
 }
 
-.icon-item-text {
+.product-single-icon-item-text {
     font-size: 20px;
     color: var(--paragraph-text-color);
     line-height: 1;
@@ -825,11 +825,11 @@
         max-width: 100%;
     }
 
-    .icon-items {
+    .product-single-icon-items {
         flex-direction: row;
     }
 
-    .icon-item {
+    .product-single-icon-item {
         padding: 16px 16px;
     }
 
@@ -870,16 +870,16 @@
         gap: 16px;
     }
 
-    .icon-items {
+    .product-single-icon-items {
         gap: 16px;
     }
 
-    .icon-item .icon svg {
+    .product-single-icon-item .icon svg {
         width: 30px;
         height: 30px;
     }
 
-    .icon-item-text {
+    .product-single-icon-item-text {
         font-size: 16px;
     }
 
