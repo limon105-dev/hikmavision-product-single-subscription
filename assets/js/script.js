@@ -24,6 +24,16 @@ $(document).ready(function () {
 		$(this).parent().siblings().removeClass('active').find('.faq-accordion-item-content').slideUp();
 	});
 	// **..faq-accordion js end..**
+
+	// hotspot banner js start---
+	$('.hotspot-input').change(function () {
+		if ($(this).is(":checked")) {
+			$('.hotspot-wrapper').addClass("hotspot-blur");
+		} else {
+			$('.hotspot-wrapper').removeClass("hotspot-blur");
+		}
+	});
+	// hotspot banner js end---
 })
 
 // product-slider js start---
