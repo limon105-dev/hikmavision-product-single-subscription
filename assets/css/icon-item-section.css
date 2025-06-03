@@ -95,12 +95,16 @@
 }
 
 .icon-items-wrapper .icon-items-img {
-    height: 460px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
 }
 
 .icon-items-wrapper .icon-items-img img {
     object-fit: contain;
     margin: 0 auto;
+    max-width: 330px;
 }
 
 /* item-icon-section2 css end */

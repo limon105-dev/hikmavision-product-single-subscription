@@ -219,5 +219,11 @@ input::-webkit-inner-spin-button {
         font-size: 24px;
     }
 
+    .section-heading-text {
+        margin: 10px auto 0;
+        font-size: 14px;
+        line-height: 18px;
+    }
+
     /* common css end */
 }
