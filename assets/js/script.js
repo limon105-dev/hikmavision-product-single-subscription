@@ -1,6 +1,17 @@
 $(document).ready(function () {
 	'use strict';
 
+	// sticky-add-to-cart-section js start--
+	$(window).on('load scroll', function () {
+		var scrolling = $(this).scrollTop();
+		if (scrolling > 330) {
+			$('.sticky-add-to-cart-section').addClass('fixed')
+		} else {
+			$('.sticky-add-to-cart-section').removeClass('fixed')
+		}
+	})
+	// sticky-add-to-cart-section js end--
+
 	// product varient js start--
 	$(".label-accordion-btn").click(function (event) {
 		event.stopPropagation();
@@ -40,13 +51,13 @@ $(document).ready(function () {
 const items = document.querySelectorAll('.timeline-item');
 
 const observer = new IntersectionObserver(entries => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add('visible');
-    }
-  });
+	entries.forEach(entry => {
+		if (entry.isIntersecting) {
+			entry.target.classList.add('visible');
+		}
+	});
 }, {
-  threshold: 0.1
+	threshold: 0.1
 });
 
 items.forEach(item => observer.observe(item));
