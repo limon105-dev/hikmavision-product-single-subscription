@@ -129,6 +129,7 @@
 
     .icon-items-wrapper .icon-items .icon-item {
         text-align: center;
+        margin: 0 0 30px 0;
     }
 
     .icon-items-wrapper .icon-items:first-child .icon-item {

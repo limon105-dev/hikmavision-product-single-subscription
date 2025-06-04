@@ -97,3 +97,71 @@ var swiper2 = new Swiper(".single-product-slider", {
 	},
 });
 // product-slider js end---
+
+// phases slider js start----
+var swiper = new Swiper(".phases-img-slider", {
+	loop: false,
+	spaceBetween: 24,
+	slidesPerView: 3,
+	navigation: {
+		nextEl: ".phases-slider-btn-next",
+		prevEl: ".phases-slider-btn-prev",
+	},
+	breakpoints: {
+		// when window width is >= 1px
+		1: {
+			spaceBetween: 0,
+			slidesPerView: 1,
+		},
+		// when window width is >= 576px
+		576: {
+			spaceBetween: 16,
+			slidesPerView: 2,
+		},
+		// when window width is >= 768px
+		768: {
+			spaceBetween: 24,
+			slidesPerView: 2,
+		},
+		// when window width is >= 993px
+		993: {
+			spaceBetween: 24,
+			slidesPerView: 3,
+		},
+	}
+});
+// phases slider js end----
+
+// phases slider js start----
+var swiper = new Swiper(".phases-content-slider", {
+	loop: false,
+	spaceBetween: 24,
+	slidesPerView: 3,
+	navigation: {
+		nextEl: ".phases-slider-btn-next",
+		prevEl: ".phases-slider-btn-prev",
+	},
+	breakpoints: {
+		// when window width is >= 1px
+		1: {
+			spaceBetween: 0,
+			slidesPerView: 1,
+		},
+		// when window width is >= 576px
+		576: {
+			spaceBetween: 16,
+			slidesPerView: 2,
+		},
+		// when window width is >= 768px
+		768: {
+			spaceBetween: 24,
+			slidesPerView: 2,
+		},
+		// when window width is >= 993px
+		993: {
+			spaceBetween: 24,
+			slidesPerView: 3,
+		},
+	}
+});
+// phases slider js end----
