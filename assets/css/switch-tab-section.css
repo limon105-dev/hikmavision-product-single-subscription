@@ -1,0 +1,185 @@
+/* switch-tab section css start */
+.switch-tab-section {
+    padding: 80px 0;
+}
+
+.switch-tab {
+    margin: 0 0 50px 0;
+}
+
+.switch-toggle-checkbox {
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.switch-toggle-checkbox .switch-toggle-checkbox-input {
+    height: 0;
+    width: 0;
+    visibility: hidden;
+}
+
+.switch-toggle-checkbox .switch-toggle-checkbox-input:checked~.switch-toggle-checkbox-input-label {
+    background: var(--brand-color);
+}
+
+.switch-toggle-checkbox .switch-toggle-checkbox-input-label {
+    cursor: pointer;
+    text-indent: -9999px;
+    width: 72px;
+    height: 32px;
+    background: var(--text-muted);
+    display: block;
+    border-radius: 100px;
+    position: relative;
+    transition: all 0.3s;
+}
+
+.switch-toggle-checkbox .switch-toggle-checkbox-input:checked~.switch-toggle-checkbox-input-label:before {
+    left: calc(100% - 4px);
+    transform: translateX(-100%);
+    box-shadow: 0 8px 15px var(--brand-color);
+}
+
+.switch-toggle-checkbox .switch-toggle-checkbox-input-label:before {
+    content: "";
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    width: 24px;
+    height: 24px;
+    background: transparent;
+    border-radius: 50%;
+    transition: 0.3s;
+    opacity: 0.5;
+    box-shadow: 0 8px 15px var(--text-muted);
+}
+
+.switch-toggle-checkbox .switch-toggle-checkbox-input:checked~.switch-toggle-checkbox-input-label:after {
+    left: calc(100% - 4px);
+    transform: translateX(-100%);
+}
+
+.switch-toggle-checkbox .switch-toggle-checkbox-input-label:after {
+    content: "";
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    width: 24px;
+    height: 24px;
+    background: var(--white);
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+.switch-toggle-checkbox .switch-toggle-checkbox-right,
+.switch-toggle-checkbox .switch-toggle-checkbox-left {
+    font-size: 16px;
+    font-weight: 600;
+    font-family: var(--paragraph-font);
+    line-height: 1;
+    text-transform: capitalize;
+}
+
+.switch-toggle-checkbox .switch-toggle-checkbox-right {
+    color: var(--text-muted);
+}
+
+.switch-toggle-checkbox .switch-toggle-checkbox-left {
+    color: var(--text-muted);
+}
+
+.switch-toggle-checkbox .switch-toggle-checkbox-input:checked~.switch-toggle-checkbox-right {
+    color: var(--brand-color);
+}
+
+.switch-toggle-checkbox .switch-toggle-checkbox-left {
+    color: var(--brand-color);
+}
+
+.switch-toggle-checkbox .switch-toggle-checkbox-input:checked~.switch-toggle-checkbox-left {
+    color: var(--text-muted);
+}
+
+.swiper.switch-tab-slider {
+    padding: 0px 0 30px 0;
+}
+
+.switch-tab-item{
+    user-select: none;
+}
+
+.switch-tab-item .switch-tab-img .switch-tab-second-img {
+    display: none;
+}
+
+.switch-tab-item.active .switch-tab-img .switch-tab-second-img {
+    display: block;
+}
+
+.switch-tab-item.active .switch-tab-img .switch-tab-first-img {
+    display: none;
+}
+
+.switch-tab-content {
+    max-width: 460px;
+    margin: 40px auto 0;
+    text-align: center;
+}
+
+.switch-tab-content-title {
+    color: var(--heading-text-color);
+    font-size: 20px;
+    font-weight: 700;
+    font-family: var(--heading-font);
+}
+
+.switch-tab-content-text {
+    color: var(--paragraph-text-color);
+    font-size: 16px;
+    font-weight: 400;
+    font-family: var(--paragraph-font);
+    line-height: 22px;
+    margin: 16px 0 0 0;
+}
+
+/* switch-tab section css end */
+
+@media only screen and (max-width: 575px) {
+
+    /* switch-tab section css start */
+    .switch-tab-section {
+        padding: 40px 0;
+    }
+
+    .switch-tab {
+        margin: 0 0 30px 0;
+    }
+
+    .switch-toggle-checkbox .switch-toggle-checkbox-right,
+    .switch-toggle-checkbox .switch-toggle-checkbox-left {
+        font-size: 14px;
+    }
+
+    .swiper.switch-tab-slider {
+        padding: 0 0 25px 0;
+    }
+
+    .switch-tab-content {
+        margin: 20px auto 0;
+    }
+
+    .switch-tab-content-title {
+        font-size: 16px;
+    }
+
+    .switch-tab-content-text {
+        font-size: 14px;
+        line-height: 20px;
+        margin: 10px 0 0 0;
+    }
+
+    /* switch-tab section css end */
+}

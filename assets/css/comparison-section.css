@@ -11,7 +11,7 @@
 
 .comparison-table th,
 .comparison-table td {
-    padding: 20px;
+    padding: 20px 10px;
     text-align: center;
     border-bottom: 1px solid rgb(204 204 204 / 50%);
 }
@@ -141,7 +141,7 @@
     /* comparison section css start */
     .comparison-table th,
     .comparison-table td {
-        padding: 10px;
+        padding: 10px 5px;
     }
 
     .feature {
@@ -163,14 +163,14 @@
 
     .tick {
         font-size: 16px;
-        width: 30px;
-        height: 30px;
+        width: 25px;
+        height: 25px;
     }
 
     .cross {
         font-size: 16px;
-        width: 30px;
-        height: 30px;
+        width: 25px;
+        height: 25px;
     }
 
     .comparison-table-logo {

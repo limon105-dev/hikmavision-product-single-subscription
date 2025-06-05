@@ -45,6 +45,12 @@ $(document).ready(function () {
 		}
 	});
 	// hotspot banner js end---
+
+	// switch-tab-section js start----
+	$('#switch_toggle_btn').on('click', function () {
+		$('.switch-tab-item').toggleClass('active')
+	});
+	// switch-tab-section js end----
 })
 
 // timeline js start---
@@ -125,6 +131,22 @@ var swiper = new Swiper(".single-product-testimonial-slider", {
 });
 // single-product-testimonial slider js end----
 
+// switch-tab slider js start----
+var swiper = new Swiper(".switch-tab-slider", {
+	loop: true,
+	spaceBetween: 0,
+	slidesPerView: 1,
+	pagination: {
+		el: ".swiper-pagination",
+		clickable: true,
+	},
+	navigation: {
+		nextEl: ".swiper-button-next",
+		prevEl: ".swiper-button-prev",
+	},
+});
+// switch-tab slider js end----
+
 // phases slider js start----
 var swiper = new Swiper(".phases-img-slider", {
 	loop: false,
@@ -159,7 +181,7 @@ var swiper = new Swiper(".phases-img-slider", {
 });
 // phases slider js end----
 
-// phases slider js start----
+// phases content slider js start----
 var swiper = new Swiper(".phases-content-slider", {
 	loop: false,
 	spaceBetween: 24,
@@ -191,4 +213,4 @@ var swiper = new Swiper(".phases-content-slider", {
 		},
 	}
 });
-// phases slider js end----
+// phases content slider js end----
