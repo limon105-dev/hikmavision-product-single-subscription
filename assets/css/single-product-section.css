@@ -657,10 +657,6 @@
     bottom: 0;
 }
 
-.swiper-pagination-bullet-active {
-    background: var(--brand-color);
-}
-
 .single-product-testimonial {
     background-color: var(--item-bg);
     padding: 16px 16px 26px 16px;
