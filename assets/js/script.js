@@ -15,7 +15,7 @@ $(document).ready(function () {
 	// product varient js start--
 	$(".label-accordion-btn").click(function (event) {
 		event.stopPropagation();
-		$(this).next().slideDown();
+		$(this).next().slideToggle();
 		$(this).parent().parent().siblings().find(".label-content-bottom").slideUp();
 	});
 	// product varient js end--
@@ -108,6 +108,22 @@ var swiper2 = new Swiper(".single-product-slider", {
 	},
 });
 // product-slider js end---
+
+// single-product-testimonial slider js start----
+var swiper = new Swiper(".single-product-testimonial-slider", {
+	loop: true,
+	spaceBetween: 0,
+	slidesPerView: 1,
+	autoplay: {
+		delay: 2500,
+		disableOnInteraction: false,
+	},
+	pagination: {
+		el: ".swiper-pagination",
+		clickable: true,
+	},
+});
+// single-product-testimonial slider js end----
 
 // phases slider js start----
 var swiper = new Swiper(".phases-img-slider", {

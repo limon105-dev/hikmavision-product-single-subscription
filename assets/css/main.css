@@ -179,6 +179,10 @@ input::-webkit-inner-spin-button {
     color: var(--btn-bg);
 }
 
+.swiper-pagination-bullet-active {
+    background: var(--brand-color);
+}
+
 /* common css start */
 .section-heading-wrapper {
     margin: 0 0 60px 0;
@@ -223,33 +227,6 @@ input::-webkit-inner-spin-button {
         margin: 10px auto 0;
         font-size: 14px;
         line-height: 18px;
-    }
-
-    .sticky-card-badge {
-        font-size: 14px;
-        padding: 7px;
-    }
-
-    .sticky-add-to-cart-right {
-        gap: 10px;
-        flex-direction: column;
-    }
-
-    .sticky-add-to-cart-basic-info {
-        gap: 16px;
-    }
-
-    .sticky-latest-price {
-        font-size: 14px;
-    }
-
-    .sticky-previous-price {
-        font-size: 14px;
-    }
-
-    .sticky-add-to-cart-btn .custom-btn {
-        padding: 8px 16px;
-        font-size: 14px;
     }
 
     /* common css end */
