@@ -37,13 +37,22 @@
     font-family: var(--heading-font);
 }
 
+.icon-item-subtitle {
+    color: var(--heading-text-color);
+    font-size: 16px;
+    font-weight: 600;
+    font-family: var(--heading-font);
+    margin: 5px 0 0 0;
+    line-height: 1.2;
+}
+
 .icon-item-text {
     color: var(--paragraph-text-color);
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 400;
     font-family: var(--paragraph-font);
-    line-height: 22px;
-    margin: 10px 0 0 0;
+    line-height: 18px;
+    margin: 5px 0 0 0;
 }
 
 /* icon-item section css end */
@@ -185,9 +194,13 @@
         font-size: 16px;
     }
 
-    .icon-item-text {
+     .icon-item-subtitle {
         font-size: 14px;
-        line-height: 20px;
+    }
+
+    .icon-item-text {
+        font-size: 12px;
+        line-height: 18px;
     }
 
     /* icon-item section css end */
