@@ -7,6 +7,9 @@
     width: 100%;
     margin: auto;
     border-collapse: collapse;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 21px rgb(0 0 0 / 27%);
 }
 
 .comparison-table th,
@@ -17,8 +20,7 @@
 }
 
 .feature {
-    background: var(--icon-item-bg);
-    text-align: left !important;
+    background: var(--white);
     border-right: none;
     width: 40%;
     font-size: 16px;
@@ -66,54 +68,34 @@
 }
 
 .company {
-    background: var(--brand-color);
-    color: var(--white);
+    background: var(--table-bg);
     border-left: none;
     width: 18%;
-    font-size: 20px;
-    font-weight: 700;
-    font-family: var(--heading-font);
-    font-family: var(--paragraph-font);
 }
 
 .others {
-    background: var(--text-muted);
-    color: var(--white);
+    background: var(--table-bg);
     width: 14%;
+}
+
+.feature.feature-heading,
+.company,
+.others {
+    color: var(--black);
     font-size: 20px;
     font-weight: 700;
     font-family: var(--heading-font);
 }
 
 .tick {
-    color: var(--brand-color);
+    color: var(--color-blue);
     font-size: 20px;
-    width: 35px;
-    height: 35px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto;
-    background: var(--white);
-    border-radius: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     line-height: 1;
 }
 
 .cross {
-    color: var(--brand-color);
+    color: var(--color-red);
     font-size: 20px;
-    width: 35px;
-    height: 35px;
-    display: flex;
-    margin: 0 auto;
-    background: var(--white);
-    border-radius: 50px;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
     line-height: 1;
 }
 
@@ -151,26 +133,25 @@
 
     .company {
         width: 20%;
-        font-size: 14px;
-        font-weight: 500;
     }
 
     .others {
         width: 10%;
+    }
+
+    .feature.feature-heading,
+    .company,
+    .others {
         font-size: 14px;
         font-weight: 500;
     }
 
     .tick {
         font-size: 16px;
-        width: 25px;
-        height: 25px;
     }
 
     .cross {
         font-size: 16px;
-        width: 25px;
-        height: 25px;
     }
 
     .comparison-table-logo {
