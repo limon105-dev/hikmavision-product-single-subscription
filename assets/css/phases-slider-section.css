@@ -41,22 +41,28 @@
     display: none;
 }
 
-.phases-img-slider-line .swiper-button-next {
+.swiper.phases-img-slider:hover .phases-img-slider-line .swiper-button-next {
     right: 0;
 }
 
-.phases-img-slider-line .swiper-button-prev {
+.swiper.phases-img-slider:hover .phases-img-slider-line .swiper-button-prev {
     left: 0;
 }
 
 .phases-img-slider-line .swiper-button-next svg,
 .phases-img-slider-line .swiper-button-prev svg {
     height: fit-content;
+    width: 24px;
 }
 
 .phases-img-slider-line .swiper-button-next svg path,
 .phases-img-slider-line .swiper-button-prev svg path {
     fill: var(--black);
+}
+
+.swiper-button-next.phases-slider-btn-next.swiper-button-disabled,
+.swiper-button-prev.phases-slider-btn-prev.swiper-button-disabled {
+    opacity: 0;
 }
 
 .phases-content-slider-item {

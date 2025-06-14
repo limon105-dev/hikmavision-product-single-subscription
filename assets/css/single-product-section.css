@@ -647,6 +647,10 @@
     color: var(--btn-bg);
 }
 
+.product-bundle-btn.active{
+    display: none;
+}
+
 /* product bundle varient css end */
 
 .single-product-testimonial-wrapper {

@@ -17,6 +17,7 @@ $(document).ready(function () {
 		event.stopPropagation();
 		$(this).next().slideToggle();
 		$(this).parent().parent().siblings().find(".label-content-bottom").slideUp();
+		$('.product-bundle-btn').toggleClass('active');
 	});
 	// product varient js end--
 
@@ -150,7 +151,7 @@ var swiper = new Swiper(".switch-tab-slider", {
 // phases slider js start----
 var swiper = new Swiper(".phases-img-slider", {
 	loop: false,
-	spaceBetween: 24,
+	spaceBetween: 60,
 	slidesPerView: 3,
 	navigation: {
 		nextEl: ".phases-slider-btn-next",
@@ -174,7 +175,7 @@ var swiper = new Swiper(".phases-img-slider", {
 		},
 		// when window width is >= 993px
 		993: {
-			spaceBetween: 24,
+			spaceBetween: 60,
 			slidesPerView: 3,
 		},
 	}
@@ -184,7 +185,7 @@ var swiper = new Swiper(".phases-img-slider", {
 // phases content slider js start----
 var swiper = new Swiper(".phases-content-slider", {
 	loop: false,
-	spaceBetween: 24,
+	spaceBetween: 60,
 	slidesPerView: 3,
 	navigation: {
 		nextEl: ".phases-slider-btn-next",
@@ -208,7 +209,7 @@ var swiper = new Swiper(".phases-content-slider", {
 		},
 		// when window width is >= 993px
 		993: {
-			spaceBetween: 24,
+			spaceBetween: 60,
 			slidesPerView: 3,
 		},
 	}

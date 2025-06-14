@@ -28,7 +28,7 @@
 .switch-toggle-checkbox .switch-toggle-checkbox-input-label {
     cursor: pointer;
     text-indent: -9999px;
-    width: 72px;
+    width: 64px;
     height: 32px;
     background: var(--text-muted);
     display: block;

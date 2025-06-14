@@ -196,8 +196,6 @@ input::-webkit-inner-spin-button {
     -moz-border-radius: 50px;
     -ms-border-radius: 50px;
     -o-border-radius: 50px;
-    opacity: 0;
-    visibility: hidden;
     transition: all ease .3s;
     -webkit-transition: all ease .3s;
     -moz-transition: all ease .3s;
@@ -205,10 +203,20 @@ input::-webkit-inner-spin-button {
     -o-transition: all ease .3s;
 }
 
-.swiper:hover .swiper-button-next,
+.swiper-button-next {
+    right: -100px;
+}
+
+.swiper-button-prev {
+    left: -100px;
+}
+
+.swiper:hover .swiper-button-next{
+    right: 10px;
+}
+
 .swiper:hover .swiper-button-prev {
-    opacity: 1;
-    visibility: visible;
+    left: 10px;
 }
 
 .swiper-button-next.swiper-button-disabled,
