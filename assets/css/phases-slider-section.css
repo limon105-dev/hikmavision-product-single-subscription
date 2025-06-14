@@ -88,6 +88,20 @@
 
 /* phases-slider-section css end */
 
+@media only screen and (max-width:992px) {
+
+    /* phases-slider-section css start */
+    .swiper.phases-img-slider .phases-img-slider-line .swiper-button-next {
+        right: 0;
+    }
+
+    .swiper.phases-img-slider .phases-img-slider-line .swiper-button-prev {
+        left: 0;
+    }
+
+    /* phases-slider-section css end */
+}
+
 @media only screen and (max-width:767px) {
 
     /* phases-slider-section css start */
