@@ -3,6 +3,12 @@
     padding: 80px 0;
 }
 
+.comparison-table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+    padding: 20px;
+}
+
 .comparison-table {
     width: 100%;
     margin: auto;
@@ -121,14 +127,21 @@
 @media only screen and (max-width:767px) {
 
     /* comparison section css start */
+    .comparison-table {
+        border-radius: 5px;
+        min-width: 550px;
+    }
+
     .comparison-table th,
     .comparison-table td {
         padding: 10px 5px;
+        border-right: 1px solid rgb(204 204 204 / 50%);
     }
 
     .feature {
         width: 60%;
-        font-size: 14px;
+        font-size: 11px;
+        line-height: 1.2;
     }
 
     .company {
@@ -142,25 +155,17 @@
     .feature.feature-heading,
     .company,
     .others {
-        font-size: 14px;
+        font-size: 12px;
         font-weight: 500;
+        line-height: 1.2;
     }
 
     .tick {
-        font-size: 16px;
+        font-size: 14px;
     }
 
     .cross {
-        font-size: 16px;
-    }
-
-    .comparison-table-logo {
-        width: 100px;
-        height: 100px;
-    }
-
-    .comparison-table-logo img {
-        width: 65px;
+        font-size: 14px;
     }
 
     /* comparison section css end */

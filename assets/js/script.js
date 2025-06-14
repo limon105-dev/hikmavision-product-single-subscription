@@ -149,9 +149,9 @@ var swiper = new Swiper(".switch-tab-slider", {
 // switch-tab slider js end----
 
 // phases slider js start----
-var swiper = new Swiper(".phases-img-slider", {
+var swiper = new Swiper(".phases-slider", {
 	loop: false,
-	spaceBetween: 60,
+	spaceBetween: 0,
 	slidesPerView: 3,
 	navigation: {
 		nextEl: ".phases-slider-btn-next",
@@ -160,58 +160,20 @@ var swiper = new Swiper(".phases-img-slider", {
 	breakpoints: {
 		// when window width is >= 1px
 		1: {
-			spaceBetween: 0,
 			slidesPerView: 1,
 		},
 		// when window width is >= 576px
 		576: {
-			spaceBetween: 16,
 			slidesPerView: 2,
 		},
 		// when window width is >= 768px
 		768: {
-			spaceBetween: 24,
 			slidesPerView: 2,
 		},
 		// when window width is >= 993px
 		993: {
-			spaceBetween: 60,
 			slidesPerView: 3,
 		},
 	}
 });
 // phases slider js end----
-
-// phases content slider js start----
-var swiper = new Swiper(".phases-content-slider", {
-	loop: false,
-	spaceBetween: 60,
-	slidesPerView: 3,
-	navigation: {
-		nextEl: ".phases-slider-btn-next",
-		prevEl: ".phases-slider-btn-prev",
-	},
-	breakpoints: {
-		// when window width is >= 1px
-		1: {
-			spaceBetween: 0,
-			slidesPerView: 1,
-		},
-		// when window width is >= 576px
-		576: {
-			spaceBetween: 16,
-			slidesPerView: 2,
-		},
-		// when window width is >= 768px
-		768: {
-			spaceBetween: 24,
-			slidesPerView: 2,
-		},
-		// when window width is >= 993px
-		993: {
-			spaceBetween: 60,
-			slidesPerView: 3,
-		},
-	}
-});
-// phases content slider js end----
